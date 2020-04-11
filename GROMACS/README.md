@@ -54,6 +54,7 @@ instead lignocellulose-rf.tpr. It is the same as lignocellulose-rf.tpr
 created on a BG/Q system.
 
 The general way to run gromacs benchmarks is :
+```
 WRAPPER WRAPPER_OPTIONS PATH_TO_GMX mdrun -s CASENAME.tpr -maxh 0.50 -resethway -noconfout -nsteps 10000 -g logile
 
 CASENAME is one of ion_channel or lignocellulose-rf
@@ -77,6 +78,7 @@ Slurm    : srun  with no options, obtained from slurm if the variables below are
 #SBATCH --nodes=NODES
 #SBATCH --ntasks-per-node=TASKSPERNODE
 #SBATCH --cpus-per-task=THREADSPERTASK
+```
 
 The best performance is usually obtained using pure MPI i.e. THREADSPERTASK=1.
 You can check other hybrid MPI/OMP combinations.
