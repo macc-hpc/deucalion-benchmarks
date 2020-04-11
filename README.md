@@ -60,10 +60,9 @@ GROMACS supports all the usual algorithms you expect from a modern molecular dyn
 Instructions:
 
 - Web site: http://www.gromacs.org/
-- Code download: http://www.gromacs.org/Downloads The UEABS benchmark cases require the use of 5.1.x or newer branch: the latest 2016 version is suggested.
+- Download, build and run: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/GROMACS/README.md.
 - Test Case A: https://repository.prace-ri.eu/ueabs/GROMACS/1.2/GROMACS_TestCaseA.tar.gz
 - Test Case B: https://repository.prace-ri.eu/ueabs/GROMACS/1.2/GROMACS_TestCaseB.tar.gz
-- Run instructions: https://repository.prace-ri.eu/git/UEABS/ueabs/blob/r1.3/gromacs/GROMACS_Run_README.txt
 
 
 # NEMO <a name="nemo"></a>
