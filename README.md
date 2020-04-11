@@ -28,7 +28,7 @@ CP2K is written in Fortran 2008 and can be run in parallel using a combination o
 
 - Web site: https://www.cp2k.org/
 - Code download: https://github.com/cp2k/cp2k/releases
-- [Build & run instructions, details about benchmarks](./cp2k/README.md)
+- [Build & run instructions, details about benchmarks]( https://github.com/macc-hpc/deucalion-benchmarks/blob/master/CP2K/README.md)
 - Benchmarks:
  - [Test Case A](./cp2k/benchmarks/TestCaseA_H2O-512)
  - [Test Case B](./cp2k/benchmarks/TestCaseB_LiH-HFX)
