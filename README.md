@@ -30,9 +30,9 @@ CP2K is written in Fortran 2008 and can be run in parallel using a combination o
 - Code download: https://github.com/cp2k/cp2k/releases
 - [Build & run instructions, details about benchmarks]( https://github.com/macc-hpc/deucalion-benchmarks/blob/master/CP2K/README.md)
 - Benchmarks:
- - [Test Case A](./cp2k/benchmarks/TestCaseA_H2O-512)
- - [Test Case B](./cp2k/benchmarks/TestCaseB_LiH-HFX)
- - [Test Case C](./cp2k/benchmarks/TestCaseC_H2O-DFT-LS)
+ - [Test Case A](https://repository.prace-ri.eu/git/UEABS/ueabs/-/tree/master/cp2k/benchmarks/TestCaseA_H2O-512)
+ - [Test Case B](https://repository.prace-ri.eu/git/UEABS/ueabs/-/tree/master/cp2k/benchmarks/TestCaseB_LiH-HFX)
+ - [Test Case C](https://repository.prace-ri.eu/git/UEABS/ueabs/-/tree/master/cp2k/benchmarks/TestCaseC_H2O-DFT-LS)
 
 # GROMACS <a name="gromacs"></a>
 
