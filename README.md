@@ -2,7 +2,6 @@ The repository contains the following benchmarks:
 ---------------------------------------------------
 
 - [ALYA](#alya)
-- [Code_Saturne](#saturne)
 - [CP2K](#cp2k)
 - [GROMACS](#gromacs)
 - [NEMO](#nemo)
@@ -17,26 +16,10 @@ The Alya System is a Computational Mechanics code capable of solving different p
 
 - Web site: https://www.bsc.es/computer-applications/alya-system
 - Code download: https://repository.prace-ri.eu/ueabs/ALYA/2.1/Alya.tar.gz 
-- Build instructions: https://repository.prace-ri.eu/git/UEABS/ueabs/blob/r2.1/alya/ALYA_Build_README.txt
+- Build and run instructions: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/ALYA/README.md
 - Test Case A: https://repository.prace-ri.eu/ueabs/ALYA/2.1/TestCaseA.tar.gz 
 - Test Case B: https://repository.prace-ri.eu/ueabs/ALYA/2.1/TestCaseB.tar.gz 
-- Run instructions: https://repository.prace-ri.eu/git/UEABS/ueabs/blob/r2.1/alya/ALYA_Run_README.txt
 
-# Code_Saturne <a name="saturne"></a>
-
-Code_Saturne is open-source multi-purpose CFD software, primarily developed by EDF R&D and maintained by them. It relies on the Finite Volume method and a collocated arrangement of unknowns to solve the Navier-Stokes equations, for incompressible or compressible flows, laminar or turbulent flows and non-Newtonian and Newtonian fluids. A highly parallel coupling library (Parallel Locator Exchange - PLE) is also available in the distribution to account for other physics, such as conjugate heat transfer and structure mechanics. For the incompressible solver, the pressure is solved using an integrated Algebraic Multi-Grid algorithm and the scalars are computed by conjugate gradient methods or Gauss-Seidel/Jacobi.
-
-The original version of the code is written in C for pre-postprocessing, IO handling, parallelisation handling, linear solvers and gradient computation, and Fortran 95 for most of the physics implementation. MPI is used on distributed memory machines and OpenMP pragmas have been added to the most costly parts of the code to handle potential shared memory. The version used in this work (also freely available) relies also on CUDA to take advantage of potential GPU acceleration.
-
-The equations are solved iteratively using time-marching algorithms, and most of the time spent during a time step is usually due to the computation of the velocity-pressure coupling, for simple physics. For this reason, the two test cases chosen for the benchmark suite have been designed to assess the velocity-pressure coupling computation, and rely on the same configuration, with a mesh 8 times larger for Test Case B than for Test Case A, the time step being halved to ensure a correct Courant number.
-
-- Web site: https://code-saturne.org
-- Code download: https://repository.prace-ri.eu/ueabs/Code_Saturne/2.1/CS_5.3_PRACE_UEABS.tar.gz
-- Disclaimer: please note that by downloading the code from this website, you agree to be bound by the terms of the GPL license.
-- Build and Run instructions: [code_saturne/Code_Saturne_Build_Run_5.3_UEABS.pdf](code_saturne/Code_Saturne_Build_Run_5.3_UEABS.pdf)
-- Test Case A: https://repository.prace-ri.eu/ueabs/Code_Saturne/2.1/CS_5.3_PRACE_UEABS_CAVITY_13M.tar.gz
-- Test Case B: https://repository.prace-ri.eu/ueabs/Code_Saturne/2.1/CS_5.3_PRACE_UEABS_CAVITY_111M.tar.gz
- 
 # CP2K <a name="cp2k"></a>
 
 CP2K is a freely available quantum chemistry and solid-state physics software package that can perform atomistic simulations of solid state, liquid, molecular, periodic, material, crystal, and biological systems. CP2K provides a general framework for different modelling methods such as DFT using the mixed Gaussian and plane waves approaches GPW and GAPW. Supported theory levels include DFTB, LDA, GGA, MP2, RPA, semi-empirical methods (AM1, PM3, PM6, RM1, MNDO, ...), and classical force fields (AMBER, CHARMM, ...). CP2K can do simulations of molecular dynamics, metadynamics, Monte Carlo, Ehrenfest dynamics, vibrational analysis, core level spectroscopy, energy minimisation, and transition state optimisation using NEB or dimer method.
