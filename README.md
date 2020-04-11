@@ -1,29 +1,4 @@
-# Unified European Applications Benchmark Suite
-
-The Unified European Application Benchmark Suite (UEABS) is a set of currently 13 application codes taken from the pre-existing PRACE and DEISA application benchmark suites, and extended with the PRACE Accelerator Benchmark Suite. The objective is providing a single benchmark suite of scalable, currently relevant and publicly available application codes and datasets, of a size which can realistically be run on large systems, and maintained into the future.
-
-The UEABS activity was started during the PRACE-PP project and was publicly released by the PRACE-2IP project.
-The PRACE "Accelerator Benchmark Suite" was a PRACE-4IP activity.
-The UEABS has been and will be actively updated and maintained by the subsequent PRACE-IP projects.
-
-Each application code has either one, or two input datasets. If there are two datasets, Test Case A is designed to run on Tier-1 sized systems (up to around 1,000 x86 cores, or equivalent) and Test Case B is designed to run on Tier-0 sized systems (up to around 10,000 x86 cores, or equivalent). If there is only one dataset (Test Case A), it is suitable for both sizes of system.
-
-Contacts: Valeriu Codreanu <mailto:valeriu.codreanu@surfsara.nl> or Walter Lioen <mailto:walter.lioen@surfsara.nl>
-
-Current Release
----------------
-
-The current release is Version 2.1 (April 30, 2019).
-See also the [release notes and history](RELEASES.md).
-
-Running the suite
------------------
-
-Instructions to run each test cases of each codes can be found in the subdirectories of this repository.
-
-For more details of the codes and datasets, and sample results, please see the PRACE-5IP benchmarking deliverable D7.5 "Evaluation of Accelerated and Non-accelerated Benchmarks" (April 18, 2019) at http://www.prace-ri.eu/public-deliverables/ .
-
-The application codes that constitute the UEABS are:
+The repository contains the following benchmarks:
 ---------------------------------------------------
 
 - [ALYA](#alya)
@@ -32,6 +7,9 @@ The application codes that constitute the UEABS are:
 - [GROMACS](#gromacs)
 - [NEMO](#nemo)
 - [SPECFEM3D](#specfem3d)
+- [IO500](#io500)
+- [HPCC](#hpcc)
+
 
 # ALYA <a name="alya"></a>
 
