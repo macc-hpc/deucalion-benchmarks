@@ -111,7 +111,7 @@ In this configuration, we use default value of 30 ocean levels depicted by jpk=3
 
 
 * Web site: <http://www.nemo-ocean.eu/>
-* Download, Build and Run Instructions : <https://repository.prace-ri.eu/git/UEABS/ueabs/tree/master/nemo>
+* Download, Build and Run Instructions : https://github.com/macc-hpc/deucalion-benchmarks/blob/master/NEMO/README.md
 
 
 # SPECFEM3D <a name="specfem3d"></a>
