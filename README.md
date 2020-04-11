@@ -127,7 +127,6 @@ In many geological models in the context of seismic wave propagation studies (ex
 - Build instructions: http://www.geodynamics.org/wsvn/cig/seismo/3D/SPECFEM3D_GLOBE/trunk/doc/USER_MANUAL/manual_SPECFEM3D_GLOBE.pdf?op=file&rev=0&sc=0
 - Test Case A: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/r2.1-dev/specfem3d/test_cases/SPECFEM3D_TestCaseA
 - Test Case B: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/r2.1-dev/specfem3d/test_cases/SPECFEM3D_TestCaseB
-- Run instructions: https://repository.prace-ri.eu/git/UEABS/ueabs/blob/r2.1-dev/specfem3d/README.md
-
+- Download, build and run instructions: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/NEMO/README.md
 
 
