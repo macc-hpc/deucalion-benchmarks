@@ -1,6 +1,7 @@
 
 # Build 
 # Load modules
+```
 ml gcc/7.4.0 openmpi
 
 cp -r specfem3d_globe specfem3d_globe_test_case_a
