@@ -1,0 +1,39 @@
+# generic gfortran compiler options for linux
+# NCDF_INC    netcdf include file
+# NCDF_LIB    netcdf library
+# FC          Fortran compiler command
+# FCFLAGS     Fortran compiler flags
+# FFLAGS      Fortran 77 compiler flags
+# LD          linker
+# LDFLAGS     linker flags, e.g. -L<lib dir> if you have libraries in a
+# FPPFLAGS    pre-processing flags
+# AR          assembler
+# ARFLAGS     assembler flags
+# MK          make
+# USER_INC    additional include files for the compiler,  e.g. -I<include dir>
+# USER_LIB    additional libraries to pass to the linker, e.g. -l<library>
+
+%NCDF_HOME           /opt/ohpc/pub/macc/spack/linux-centos7-sandybridge/gcc-7.4.0/netcdf-c-4.7.3-kjdmbjmhllfeij46gaorfa7jm2aun4bl
+%NCDFF_HOME          /opt/ohpc/pub/macc/spack/linux-centos7-sandybridge/gcc-7.4.0/netcdf-fortran-4.5.2-cozakg36idyaowhj4xek3pakgaqne6dn
+
+%XIOS_HOME           /home/macc/benchmarks/xios-2.5
+
+%CPP                 cpp
+%CPPFLAGS            -P -traditional
+
+%XIOS_INC            -I%XIOS_HOME/inc
+%XIOS_LIB            -L%XIOS_HOME/lib -lxios
+
+%NCDF_INC            -I%NCDF_HOME/include -I%NCDFF_HOME/include
+%NCDF_LIB            -L%NCDF_HOME/lib -L%NCDFF_HOME/lib -lnetcdf -lnetcdff -lstdc++
+%FC                  mpif90
+%FCFLAGS             -fdefault-real-8 -O3 -funroll-all-loops -fcray-pointer -cpp -ffree-line-length-none
+%FFLAGS              %FCFLAGS
+%LD                  %FC
+%LDFLAGS
+%FPPFLAGS            -P -C -traditional
+%AR                  ar
+%ARFLAGS             -rs
+%MK                  make
+%USER_INC            %XIOS_INC %NCDF_INC
+%USER_LIB            %XIOS_LIB %NCDF_LIB
