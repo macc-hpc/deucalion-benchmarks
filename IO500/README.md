@@ -1,24 +1,27 @@
+# Download
+Get code from Github:
+```
+git clone https://github.com/VI4IO/io-500-dev.git -b io500-sc-19
+```
 
-The IO-500 has been developed together with the community and its development is still ongoing. The benchmark is essentially a benchmark suite bundled with execution rules. It harnesses existing and trusted open source benchmarks.
 
-The goal for the benchmark is to capture user-experienced performance. It aims to be:
+This is designed to work from an interactive login (e.g. it won't work from a login node) and uses 'mpirun -np 2' to do the simplest possible MPI run. It runs a trivially sized problem and uses a serial implementation of find. Hopefully it just works for you; if it doesn't, please let us know.
 
----------------------------------------------------
+To improve it, edit i0500.sh one function at a time to grow the problem size and replace the serial find with something much faster (you may want to try the provided python parallel find). You may also need to take whatever steps necessary to run it with a job scheduler.
 
-- Representative
-- Understandable
-- Scalable
-- Portable
-- Inclusive
-- Lightweight
-- Trustworthy
 
-The benchmark covers various workloads and computes a single score for comparison. The workloads are:
+# Build
 
-- IOEasy: Applications with well optimized I/O patterns
-- IOHard: Applications that require a random workload
-- MDEasy: Metadata/small objects
-- MDHard: Small files (3901 bytes) in a shared directory
-- Find: Finding relevant objects based on patterns
+```
+# Load MPI module
+ml OpenMPI/3.1.3-GCC-8.2.0-2.31.1
+./utilities/prepare.sh
 
-The individual performance numbers are preserved and accessible via the web or the raw data. This allows deriving other relevant metrics
+```
+
+# Run
+
+Simply run io500 script:
+```
+./io500.sh
+```
