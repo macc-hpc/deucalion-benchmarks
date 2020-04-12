@@ -9,7 +9,8 @@ Where possible, intructions are heavily based on [Unified European Applications 
 - [SPECFEM3D](#specfem3d)
 - [IO500](#io500)
 - [HPCC](#hpcc)
-- [OPENNMT-tf](#opennmt)
+- [OPENNMT-TF](#opennmt)
+- [RESNET-50](#resnet-50)
 
 # ALYA
 
@@ -180,7 +181,7 @@ The HPC Challenge benchmark consists of basically 7 tests:
 - Build and run instructions: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/HPCC/README.md
 
 
-# OpenNMT-tf
+# OPENNMT-TF
 
 OpenNMT-tf is a general purpose sequence learning toolkit using TensorFlow 2.0. While neural machine translation is the main target task, it has been designed to more generally support:
 
@@ -192,7 +193,7 @@ OpenNMT-tf is a general purpose sequence learning toolkit using TensorFlow 2.0. 
 - Web site: https://github.com/OpenNMT/OpenNMT-tf
 - Download and run instructions: https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt
 
-# ResNet-50
+# RESNET-50
 
 Resnet-50 v1 applied to Imagenet.
 
