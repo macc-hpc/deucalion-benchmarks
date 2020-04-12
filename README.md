@@ -9,7 +9,7 @@ Where possible, intructions are heavily based on [Unified European Applications 
 - [SPECFEM3D](#specfem3d)
 - [IO500](#io500)
 - [HPCC](#hpcc)
-- [OPENNMT-TF](#opennmt)
+- [OPENNMT-TF](#opennmt-tf)
 - [RESNET-50](#resnet-50)
 
 # ALYA
