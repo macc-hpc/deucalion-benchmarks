@@ -1,6 +1,6 @@
 # The repository contains the following benchmarks:
 
-Where possible intructions are heavily based on [Unified European Applications Benchmark Suite](https://repository.prace-ri.eu/git/UEABS/ueabs/)
+Where possible, intructions are heavily based on [Unified European Applications Benchmark Suite](https://repository.prace-ri.eu/git/UEABS/ueabs/)
 
 - [ALYA](#alya)
 - [CP2K](#cp2k)
@@ -128,3 +128,11 @@ In many geological models in the context of seismic wave propagation studies (ex
 - Test Case A: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/r2.1-dev/specfem3d/test_cases/SPECFEM3D_TestCaseA
 - Test Case B: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/r2.1-dev/specfem3d/test_cases/SPECFEM3D_TestCaseB
 - Download, build and run instructions: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/SPECFEM3D/README.md
+
+# IO500
+
+TODO
+
+# HPCC
+
+TODO
