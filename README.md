@@ -9,6 +9,7 @@ Where possible, intructions are heavily based on [Unified European Applications 
 - [SPECFEM3D](#specfem3d)
 - [IO500](#io500)
 - [HPCC](#hpcc)
+- [OPENNMT-tf](#opennmt)
 
 # ALYA
 
@@ -162,4 +163,38 @@ The individual performance numbers are preserved and accessible via the web or t
 
 # HPCC
 
-TODO
+HPC Challenge is a benchmark suite that measures a range memory access patterns. Source code repository of the benchmark is located at HPCC SourceForge and HPCC@BitBucket pages.
+
+The HPC Challenge benchmark consists of basically 7 tests:
+
+- HPL - the Linpack TPP benchmark which measures the floating point rate of execution for solving a linear system of equations.
+- DGEMM - measures the floating point rate of execution of double precision real matrix-matrix multiplication.
+- STREAM - a simple synthetic benchmark program that measures sustainable memory bandwidth (in GB/s) and the corresponding computation rate for simple vector kernel.
+- PTRANS (parallel matrix transpose) - exercises the communications where pairs of processors communicate with each other simultaneously. It is a useful test of the total communications capacity of the network.
+- RandomAccess - measures the rate of integer random updates of memory (GUPS).
+- FFT - measures the floating point rate of execution of double precision complex one-dimensional Discrete Fourier Transform (DFT).
+- Communication bandwidth and latency - a set of tests to measure latency and bandwidth of a number of simultaneous communication patterns; based on b_eff (effective bandwidth benchmark).
+
+- Web site: https://icl.utk.edu/hpcc/
+- Code download: http://icl.cs.utk.edu/projectsfiles/hpcc/download/hpcc-1.5.0.tar.gz
+- Build and run instructions: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/HPCC/README.md
+
+
+# OpenNMT-tf
+
+OpenNMT-tf is a general purpose sequence learning toolkit using TensorFlow 2.0. While neural machine translation is the main target task, it has been designed to more generally support:
+
+- sequence to sequence mapping
+- sequence tagging
+- sequence classification
+- language modeling
+
+- Web site: https://github.com/OpenNMT/OpenNMT-tf
+- Download and run instructions: https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt
+
+# ResNet-50
+
+Resnet-50 v1 applied to Imagenet.
+
+- Web site: https://github.com/mlperf/training
+- Download and run instructions: https://github.com/mlperf/training/tree/master/image_classification
