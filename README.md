@@ -1,6 +1,6 @@
 # The repository contains the following benchmarks:
 
-Where possible intructions are heavily based on [https://repository.prace-ri.eu/git/UEABS/ueabs/](Unified European Applications Benchmark Suite)
+Where possible intructions are heavily based on [Unified European Applications Benchmark Suite](https://repository.prace-ri.eu/git/UEABS/ueabs/)
 
 - [ALYA](#alya)
 - [CP2K](#cp2k)
