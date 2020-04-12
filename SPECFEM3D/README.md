@@ -1,6 +1,6 @@
 
 # Build 
-# Load modules
+## Load modules
 ```
 ml gcc/7.4.0 openmpi
 
