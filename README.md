@@ -1,5 +1,6 @@
-The repository contains the following benchmarks:
----------------------------------------------------
+# The repository contains the following benchmarks:
+
+Where possible intructions are heavily based on [https://repository.prace-ri.eu/git/UEABS/ueabs/](Unified European Applications Benchmark Suite)
 
 - [ALYA](#alya)
 - [CP2K](#cp2k)
@@ -9,8 +10,7 @@ The repository contains the following benchmarks:
 - [IO500](#io500)
 - [HPCC](#hpcc)
 
-
-# ALYA <a name="alya"></a>
+# ALYA
 
 The Alya System is a Computational Mechanics code capable of solving different physics, each one with its own modelization characteristics, in a coupled way. Among the problems it solves are: convection-diffusion reactions, incompressible flows, compressible flows, turbulence, bi-phasic flows and free surface, excitable media, acoustics, thermal flow, quantum mechanics (DFT) and solid mechanics (large strain). ALYA is written in Fortran 90/95 and parallelized using MPI and OpenMP.
 
@@ -20,7 +20,7 @@ The Alya System is a Computational Mechanics code capable of solving different p
 - Test Case A: https://repository.prace-ri.eu/ueabs/ALYA/2.1/TestCaseA.tar.gz 
 - Test Case B: https://repository.prace-ri.eu/ueabs/ALYA/2.1/TestCaseB.tar.gz 
 
-# CP2K <a name="cp2k"></a>
+# CP2K
 
 CP2K is a freely available quantum chemistry and solid-state physics software package that can perform atomistic simulations of solid state, liquid, molecular, periodic, material, crystal, and biological systems. CP2K provides a general framework for different modelling methods such as DFT using the mixed Gaussian and plane waves approaches GPW and GAPW. Supported theory levels include DFTB, LDA, GGA, MP2, RPA, semi-empirical methods (AM1, PM3, PM6, RM1, MNDO, ...), and classical force fields (AMBER, CHARMM, ...). CP2K can do simulations of molecular dynamics, metadynamics, Monte Carlo, Ehrenfest dynamics, vibrational analysis, core level spectroscopy, energy minimisation, and transition state optimisation using NEB or dimer method.
 
@@ -34,7 +34,7 @@ CP2K is written in Fortran 2008 and can be run in parallel using a combination o
  - [Test Case B](https://repository.prace-ri.eu/git/UEABS/ueabs/-/tree/master/cp2k/benchmarks/TestCaseB_LiH-HFX)
  - [Test Case C](https://repository.prace-ri.eu/git/UEABS/ueabs/-/tree/master/cp2k/benchmarks/TestCaseC_H2O-DFT-LS)
 
-# GROMACS <a name="gromacs"></a>
+# GROMACS
 
 GROMACS is a versatile package to perform molecular dynamics, i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
 
@@ -65,7 +65,7 @@ Instructions:
 - Test Case B: https://repository.prace-ri.eu/ueabs/GROMACS/1.2/GROMACS_TestCaseB.tar.gz
 
 
-# NEMO <a name="nemo"></a>
+# NEMO
 
 NEMO (Nucleus for European Modelling of the Ocean) [22] is mathematical modelling framework for research activities and prediction services in ocean and climate sciences developed by European consortium. It is intended to be tool for studying the ocean and its interaction with the other components of the earth climate system over a large number of space and time scales. It comprises of the core engines namely OPA (ocean dynamics and thermodynamics), SI3 (sea ice dynamics and thermodynamics), TOP (oceanic tracers) and PISCES (biogeochemical process).
 Prognostic variables in NEMO are the three-dimensional velocity field, a linear or non-linear sea surface height, the temperature and the salinity. 
@@ -114,7 +114,7 @@ In this configuration, we use default value of 30 ocean levels depicted by jpk=3
 * Download, Build and Run Instructions : https://github.com/macc-hpc/deucalion-benchmarks/blob/master/NEMO/README.md
 
 
-# SPECFEM3D <a name="specfem3d"></a>
+# SPECFEM3D
 
 The software package SPECFEM3D simulates three-dimensional global and regional seismic wave propagation based upon the spectral-element method (SEM). All SPECFEM3D_GLOBE software is written in Fortran90 with full portability in mind, and conforms strictly to the Fortran95 standard. It uses no obsolete or obsolescent features of Fortran77. The package uses parallel programming based upon the Message Passing Interface (MPI).
 
@@ -128,5 +128,3 @@ In many geological models in the context of seismic wave propagation studies (ex
 - Test Case A: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/r2.1-dev/specfem3d/test_cases/SPECFEM3D_TestCaseA
 - Test Case B: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/r2.1-dev/specfem3d/test_cases/SPECFEM3D_TestCaseB
 - Download, build and run instructions: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/SPECFEM3D/README.md
-
-
