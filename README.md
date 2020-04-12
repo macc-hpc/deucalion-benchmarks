@@ -175,7 +175,7 @@ The HPC Challenge benchmark consists of basically 7 tests:
 - RandomAccess - measures the rate of integer random updates of memory (GUPS).
 - FFT - measures the floating point rate of execution of double precision complex one-dimensional Discrete Fourier Transform (DFT).
 - Communication bandwidth and latency - a set of tests to measure latency and bandwidth of a number of simultaneous communication patterns; based on b_eff (effective bandwidth benchmark).
-
+---------------------------------------------------
 - Web site: https://icl.utk.edu/hpcc/
 - Code download: http://icl.cs.utk.edu/projectsfiles/hpcc/download/hpcc-1.5.0.tar.gz
 - Build and run instructions: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/HPCC/README.md
@@ -189,7 +189,7 @@ OpenNMT-tf is a general purpose sequence learning toolkit using TensorFlow 2.0. 
 - sequence tagging
 - sequence classification
 - language modeling
-
+---------------------------------------------------
 - Web site: https://github.com/OpenNMT/OpenNMT-tf
 - Download and run instructions: https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt
 
