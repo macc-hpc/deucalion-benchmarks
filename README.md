@@ -198,7 +198,7 @@ OpenNMT-tf is a general purpose sequence learning toolkit using TensorFlow 2.0. 
 
 # RESNET-50
 
-Resnet-50 v1 applied to Imagenet.
+Resnet-50 applied to Imagenet.
 
 - Web site: https://github.com/mlperf/training
 - Benchmark CNN (ImageNet) training
