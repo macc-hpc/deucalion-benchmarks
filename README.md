@@ -191,11 +191,15 @@ OpenNMT-tf is a general purpose sequence learning toolkit using TensorFlow 2.0. 
 - language modeling
 ---------------------------------------------------
 - Web site: https://github.com/OpenNMT/OpenNMT-tf
-- Download and run instructions: https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt
+- Benchmark RNN training on the WMT English-German dataset
+   * Data set: Europarl v7, Common Crawl corpus, News Commentary v10
+   * Training time when the perplexity reaches less than 8.0.
+   * Data loading and preparation and run instructions: https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt
 
 # RESNET-50
 
 Resnet-50 v1 applied to Imagenet.
 
 - Web site: https://github.com/mlperf/training
-- Download and run instructions: https://github.com/mlperf/training/tree/master/image_classification
+- Benchmark CNN (ImageNet) training
+  * Download and run instructions: https://github.com/mlperf/training/tree/master/image_classification
