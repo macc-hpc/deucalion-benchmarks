@@ -181,20 +181,17 @@ The HPC Challenge benchmark consists of basically 7 tests:
 - Build and run instructions: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/HPCC/README.md
 
 
-# OPENNMT-TF
+# OPENNMT-py
 
-OpenNMT-tf is a general purpose sequence learning toolkit using TensorFlow 2.0. While neural machine translation is the main target task, it has been designed to more generally support:
+OpenNMT-py is a PyTorch port of OpenNMT, an open-source (MIT) neural machine translation system. It is designed to be research friendly to try out new ideas in translation, summary, image-to-text, morphology, and many other domains. Some companies have proven the code to be production ready.
 
-- sequence to sequence mapping
-- sequence tagging
-- sequence classification
-- language modeling
 ---------------------------------------------------
-- Web site: https://github.com/OpenNMT/OpenNMT-tf
+- Web site: https://github.com/OpenNMT/OpenNMT-py
+- Multi-GPU: https://opennmt.net/OpenNMT-py/FAQ.html#do-you-support-multi-gpu
 - Benchmark RNN training on the WMT English-German dataset
    * Data set: Europarl v7, Common Crawl corpus, News Commentary v10
    * Training time when the perplexity reaches less than 8.0.
-   * Data loading and preparation and run instructions: https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt
+   * Data loading and preparation and run instructions: https://github.com/ictnlp/awesome-transformer#harvard-nlp-groups-implementation-opennmt-pyusing-pytorch
 
 # RESNET-50
 
@@ -202,4 +199,5 @@ Resnet-50 applied to Imagenet.
 
 - Web site: https://github.com/mlperf/training
 - Benchmark CNN (ImageNet) training
+  * Framework: PyTorch
   * Download and run instructions: https://github.com/mlperf/training/tree/master/image_classification
