@@ -12,6 +12,10 @@ Where possible, instructions are heavily based on [Unified European Applications
 - [OPENNMT-TF](#opennmt-tf)
 - [RESNET-50](#resnet-50)
 
+# Test Cases Considerations
+
+Following the [Unified European Applications Benchmark Suite](https://prace-ri.eu/training-support/technical-documentation/benchmark-suites/) guidelines, each application code has either one, or two input datasets. If there are two datasets, Test Case A is designed to run on Tier-1 sized systems (up to around 1,000 x86 cores, or equivalent) and Test Case B is designed to run on Tier-0 sized systems (up to around 10,000 x86 cores, or equivalent). If there is only one dataset (Test Case A), it is suitable for both sizes of system.
+
 # ALYA
 
 The Alya System is a Computational Mechanics code capable of solving different physics, each one with its own modelization characteristics, in a coupled way. Among the problems it solves are: convection-diffusion reactions, incompressible flows, compressible flows, turbulence, bi-phasic flows and free surface, excitable media, acoustics, thermal flow, quantum mechanics (DFT) and solid mechanics (large strain). ALYA is written in Fortran 90/95 and parallelized using MPI and OpenMP.
