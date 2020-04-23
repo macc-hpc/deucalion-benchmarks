@@ -3,7 +3,7 @@
 ### Check out NEMO sources
 
 ```
-svn co http://forge.ipsl.jussieu.fr/nemo/svn/NEMO/releases/release-3.6 nemo-3.6.new
+svn co http://forge.ipsl.jussieu.fr/nemo/svn/NEMO/releases/release-3.6 nemo-3.6
 ```
 
 
