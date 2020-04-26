@@ -12,6 +12,49 @@ Where possible, instructions are heavily based on [Unified European Applications
 - [OPENNMT-TF](#opennmt-tf)
 - [RESNET-50](#resnet-50)
 
+# Weights
+
+| Application Benchmark  | | Weight  | 
+|---|---|---|
+|  HPC Challenge Suite | |	22.0% |
+| | HPL | 2.75% |
+| | DGEMM | 2.75% |
+| | STREAM | 2.75% |
+| | PTRANS | 2.75% |
+| | RandomAccess | 2.75% |
+| | FFTE | 2.75% |
+| | RandomRing Bandwidth | 2.75% |
+| | RandomRing Latency | 2.75% |
+| IO500	 |  |8.0% |
+| ALYA | |	10.0% |
+| CP2K | |	10.0% |
+| GROMACS | |	10.0% |
+| NEMO | |	10.0% |
+| SPECFEM3D | |	10.0% |
+| ResNet-50 | |	10.0% |
+| OpenNMT	| | 10.0% |
+
+# Metrics
+| Application Benchmark  | | Metric  | 
+|---|---|---|
+|  HPC Challenge Suite | | |
+| | HPL | TFlop/s (+)|
+| | DGEMM | GFlop/s (+) |
+| | STREAM | average Triad GB/s (+) | 
+| | PTRANS |  GB/s (+) |
+| | RandomAccess | Gup/s (+) |
+| | FFTE | GFlop/s (+) |
+| | RandomRing Bandwidth | GB/s (+) |
+| | RandomRing Latency | seconds (-) |
+| IO500	 |  | final score (+), mean between bandwidth score and metadata score |
+| ALYA | |	seconds (-) |
+| CP2K | |	seconds (-) |
+| GROMACS | | ns/day (+) |
+| NEMO | | seconds (-) |
+| SPECFEM3D | |	seconds (-) |
+| ResNet-50 | |	seconds (-) |
+| OpenNMT	| | seconds (-) |
+
 # Test Cases Considerations
 
 Following the [Unified European Applications Benchmark Suite](https://prace-ri.eu/training-support/technical-documentation/benchmark-suites/) guidelines, each application code has either one, or two input datasets. If there are two datasets, Test Case A is designed to run on Tier-1 sized systems (up to around 1,000 x86 cores, or equivalent) and Test Case B is designed to run on Tier-0 sized systems (up to around 10,000 x86 cores, or equivalent). If there is only one dataset (Test Case A), it is suitable for both sizes of system.
