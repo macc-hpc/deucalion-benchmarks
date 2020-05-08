@@ -173,9 +173,9 @@ In many geological models in the context of seismic wave propagation studies (ex
 
 - Web site: http://geodynamics.org/cig/software/specfem3d_globe/
 - Code download: http://geodynamics.org/cig/software/specfem3d_globe/
-- Build instructions: http://www.geodynamics.org/wsvn/cig/seismo/3D/SPECFEM3D_GLOBE/trunk/doc/USER_MANUAL/manual_SPECFEM3D_GLOBE.pdf?op=file&rev=0&sc=0
-- Test Case A: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/r2.1-dev/specfem3d/test_cases/SPECFEM3D_TestCaseA
-- Test Case B: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/r2.1-dev/specfem3d/test_cases/SPECFEM3D_TestCaseB
+- Manual: https://raw.githubusercontent.com/geodynamics/specfem3d_globe/devel/doc/USER_MANUAL/manual_SPECFEM3D_GLOBE.pdf
+- Test Case A: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/master/specfem3d/test_cases/SPECFEM3D_TestCaseA
+- Test Case B: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/master/specfem3d/test_cases/SPECFEM3D_TestCaseB
 - Download, build and run instructions: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/SPECFEM3D/README.md
 
 # IO500
