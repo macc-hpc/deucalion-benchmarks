@@ -12,6 +12,53 @@ Where possible, instructions are heavily based on [Unified European Applications
 - [OPENNMT-TF](#opennmt-tf)
 - [RESNET-50](#resnet-50)
 
+# Weights
+
+| Application Benchmark  | | Weight  | 
+|---|---|---|
+|  HPC Challenge Suite | |	22.0% |
+| | HPL | 2.75% |
+| | DGEMM | 2.75% |
+| | STREAM | 2.75% |
+| | PTRANS | 2.75% |
+| | RandomAccess | 2.75% |
+| | FFTE | 2.75% |
+| | RandomRing Bandwidth | 2.75% |
+| | RandomRing Latency | 2.75% |
+| IO500	 |  |8.0% |
+| ALYA | |	10.0% |
+| CP2K | |	10.0% |
+| GROMACS | |	10.0% |
+| NEMO | |	10.0% |
+| SPECFEM3D | |	10.0% |
+| ResNet-50 | |	10.0% |
+| OpenNMT	| | 10.0% |
+
+# Metrics
+| Application Benchmark  | | Metric  | 
+|---|---|---|
+|  HPC Challenge Suite | | |
+| | HPL | TFlop/s (+)|
+| | DGEMM | GFlop/s (+) |
+| | STREAM | average Triad GB/s (+) | 
+| | PTRANS |  GB/s (+) |
+| | RandomAccess | Gup/s (+) |
+| | FFTE | GFlop/s (+) |
+| | RandomRing Bandwidth | GB/s (+) |
+| | RandomRing Latency | seconds (-) |
+| IO500	 |  | final score (+), mean between bandwidth score and metadata score |
+| ALYA | |	seconds (-) |
+| CP2K | |	seconds (-) |
+| GROMACS | | ns/day (+) |
+| NEMO | | seconds (-) |
+| SPECFEM3D | |	seconds (-) |
+| ResNet-50 | |	seconds (-) |
+| OpenNMT	| | seconds (-) |
+
+# Test Cases Considerations
+
+Following the [Unified European Applications Benchmark Suite](https://prace-ri.eu/training-support/technical-documentation/benchmark-suites/) guidelines, each application code has either one, or two input datasets. If there are two datasets, Test Case A is designed to run on Tier-1 sized systems (up to around 1,000 x86 cores, or equivalent) and Test Case B is designed to run on Tier-0 sized systems (up to around 10,000 x86 cores, or equivalent). If there is only one dataset (Test Case A), it is suitable for both sizes of system.
+
 # ALYA
 
 The Alya System is a Computational Mechanics code capable of solving different physics, each one with its own modelization characteristics, in a coupled way. Among the problems it solves are: convection-diffusion reactions, incompressible flows, compressible flows, turbulence, bi-phasic flows and free surface, excitable media, acoustics, thermal flow, quantum mechanics (DFT) and solid mechanics (large strain). ALYA is written in Fortran 90/95 and parallelized using MPI and OpenMP.
@@ -126,9 +173,9 @@ In many geological models in the context of seismic wave propagation studies (ex
 
 - Web site: http://geodynamics.org/cig/software/specfem3d_globe/
 - Code download: http://geodynamics.org/cig/software/specfem3d_globe/
-- Build instructions: http://www.geodynamics.org/wsvn/cig/seismo/3D/SPECFEM3D_GLOBE/trunk/doc/USER_MANUAL/manual_SPECFEM3D_GLOBE.pdf?op=file&rev=0&sc=0
-- Test Case A: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/r2.1-dev/specfem3d/test_cases/SPECFEM3D_TestCaseA
-- Test Case B: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/r2.1-dev/specfem3d/test_cases/SPECFEM3D_TestCaseB
+- Manual: https://raw.githubusercontent.com/geodynamics/specfem3d_globe/devel/doc/USER_MANUAL/manual_SPECFEM3D_GLOBE.pdf
+- Test Case A: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/master/specfem3d/test_cases/SPECFEM3D_TestCaseA
+- Test Case B: https://repository.prace-ri.eu/git/UEABS/ueabs/tree/master/specfem3d/test_cases/SPECFEM3D_TestCaseB
 - Download, build and run instructions: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/SPECFEM3D/README.md
 
 # IO500
@@ -181,21 +228,23 @@ The HPC Challenge benchmark consists of basically 7 tests:
 - Build and run instructions: https://github.com/macc-hpc/deucalion-benchmarks/blob/master/HPCC/README.md
 
 
-# OPENNMT-TF
+# OPENNMT-py
 
-OpenNMT-tf is a general purpose sequence learning toolkit using TensorFlow 2.0. While neural machine translation is the main target task, it has been designed to more generally support:
+OpenNMT-py is a PyTorch port of OpenNMT, an open-source (MIT) neural machine translation system. It is designed to be research friendly to try out new ideas in translation, summary, image-to-text, morphology, and many other domains. Some companies have proven the code to be production ready.
 
-- sequence to sequence mapping
-- sequence tagging
-- sequence classification
-- language modeling
 ---------------------------------------------------
-- Web site: https://github.com/OpenNMT/OpenNMT-tf
-- Download and run instructions: https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt
+- Web site: https://github.com/OpenNMT/OpenNMT-py
+- Multi-GPU: https://opennmt.net/OpenNMT-py/FAQ.html#do-you-support-multi-gpu
+- Benchmark RNN training on the WMT English-German dataset
+   * Data set: Europarl v7, Common Crawl corpus, News Commentary v10
+   * Training time when the perplexity reaches less than 8.0.
+   * Data loading and preparation and run instructions: https://github.com/ictnlp/awesome-transformer#harvard-nlp-groups-implementation-opennmt-pyusing-pytorch
 
 # RESNET-50
 
-Resnet-50 v1 applied to Imagenet.
+Resnet-50 applied to Imagenet.
 
 - Web site: https://github.com/mlperf/training
-- Download and run instructions: https://github.com/mlperf/training/tree/master/image_classification
+- Benchmark CNN (ImageNet) training
+  * Framework: PyTorch
+  * Download and run instructions: https://github.com/mlperf/training/tree/master/image_classification

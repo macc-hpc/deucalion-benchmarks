@@ -3,11 +3,10 @@
 In order to build ALYA (Alya.x), please follow these steps:
 
 - Go to the directory: Executables/unix
-- Build the Metis library (libmetis.a) using "make metis4"
-- Adapt the file: configure.in to your own MPI wrappers and paths (examples on the configure.in fold$
-- Execute:
-  ./configure -x nastin parall
-  make
+- Adapt the file: configure.in to your own MPI wrappers and paths (examples on the configure.in folder)
+- Execute: `./configure -x nastin parall`
+- Build the Metis library (libmetis.a) using `make metis4`
+- Build Alya: `make -j <number of cores>`
 
 Data sets
 ---------
