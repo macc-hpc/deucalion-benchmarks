@@ -42,7 +42,7 @@ mv blitz-1.0.2 blitz
 cp -R blitz.old/include/blitz/gnu blitz/blitz/
 ```
 
-Adjust XIOS compile script for the number os desired worker cores and respective arch configured in previous steps:
+Adjust XIOS compile script for the number of desired worker cores and respective arch configured in previous steps:
 
 ```
 cd ..

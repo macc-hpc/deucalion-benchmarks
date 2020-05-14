@@ -1,7 +1,7 @@
 # Build 
 
 Create a file Make.<arch> in the  top-level directory. For this purpose,  you  may  want  to re-use one contained in the setup directory. 
-This file essentially contains the compilers and librairies with their paths to be used.
+This file essentially contains the compilers and libraries with their paths to be used.
 Type "make arch=<arch>". This  should create an executable in the bin/<arch> directory called xhpl.
 
 For example, on our Linux PII cluster, I create a file called Make.Linux_PII in the top-level directory. Then, I type
@@ -12,14 +12,14 @@ This creates the executable file bin/Linux_PII/xhpl.
 ```
 cd hpl
 
-# Create a Make file similar to the ones in hpl/setup.
+# Create a Makefile similar to the ones in hpl/setup.
 
-make arch=Liux_PII_CBLAS # Example on setup directory.
+make arch=Linux_PII # Example on setup directory.
 ```
 
 # Run
 
-Run some testes:
+Run some tests:
 
 ```
 cd bin/<arch>
