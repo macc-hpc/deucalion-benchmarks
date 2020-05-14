@@ -66,9 +66,35 @@ cd nemo-3.6/NEMOGCM/CONFIG
 
 ## Run NEMO
 
-Note `mesh_mask.nc` needs to be deleted before each run
-
+Note `mesh_mask.nc` needs to be deleted before each run. This prepares the input files and dictates the execution of the application as a benchmark.
 ```
 cd MY_GYRE/EXP00
+sed -i '/using_server/s/false/true/' iodef.xml
+sed -i '/&nameos/a ln_useCT = .false.' namelist_cfg
+sed -i '/&namctl/a nn_bench = 1' namelist_cfg
+```
+
+Running the application
+```
 mpiexec -n 4 ../BLD/bin/nemo.exe : -n 2 ../../../../../xios-2.5/bin/xios_server.exe
+```
+
+
+## Modifying the configuration
+
+The parameter `jp_cfg` controls the resolution.
+
+```
+rm -f time.step solver.stat output.namelist.dyn ocean.output  slurm-*  GYRE_* mesh_mask_00*
+jp_cfg=4
+sed -i -r \
+    -e 's/^( *nn_itend *=).*/\1 21600/' \
+    -e 's/^( *nn_stock *=).*/\1 21600/' \
+    -e 's/^( *nn_write *=).*/\1 1000/' \
+    -e 's/^( *jp_cfg *=).*/\1 '"$jp_cfg"'/' \
+    -e 's/^( *jpidta *=).*/\1 '"$(( 30 * jp_cfg +2))"'/' \
+    -e 's/^( *jpjdta *=).*/\1 '"$(( 20 * jp_cfg +2))"'/' \
+    -e 's/^( *jpiglo *=).*/\1 '"$(( 30 * jp_cfg +2))"'/' \
+    -e 's/^( *jpjglo *=).*/\1 '"$(( 20 * jp_cfg +2))"'/' \
+    namelist_cfg
 ```
