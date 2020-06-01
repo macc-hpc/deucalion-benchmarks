@@ -72,6 +72,8 @@ cd MY_GYRE/EXP00
 sed -i '/using_server/s/false/true/' iodef.xml
 sed -i '/&nameos/a ln_useCT = .false.' namelist_cfg
 sed -i '/&namctl/a nn_bench = 1' namelist_cfg
+sed -i '/&namctl/a ln_ctl = .false.' namelist_cfg
+sed -i '/$namrun/a nn_timing = 0' namelist_cfg 
 ```
 
 Running the application
